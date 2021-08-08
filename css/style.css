@@ -1,0 +1,192 @@
+.hidden{
+    display: none !important;
+}
+
+body{
+    margin: 0px;
+    color:white;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:white;
+    width:500px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+input::placeholder{
+    color: #b4b4b4;
+    font-family: cursive;
+    font-size:30px;
+}
+
+div{
+    display: block;
+}
+
+button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li{
+    text-decoration: underline;
+    list-style: none;
+    padding:3px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+h3{
+    margin: 20px;
+}
+.fas{
+    color:white;
+}
+
+
+
+.bg{
+    position:absolute;
+    z-index: -2;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+
+    animation: fadein 3s;
+    -webkit-animation: fadein 1.2s;
+}
+
+
+#first h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: relative;
+    top:250px;
+    font-size:90px;
+}
+
+#login-form{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+}
+
+#last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadein 3s;
+    -webkit-animation: fadein 1.2s;
+}
+
+#greeting{
+    position:relative;
+    top: 70px;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+    text-align: center;
+}
+
+#clock{
+    position:relative;
+    top: -10px;
+    text-align: center;
+    font-size: 98px;
+    margin:30px;
+}
+
+#quote{
+    text-align: center;
+    position: relative;
+}
+
+#weather{
+    display: inline-block;
+    width: 120px;
+    margin: 0;
+    position: absolute;
+    top:10px;
+    right: 10px; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-form{
+    width: 500px;
+    margin-right: 0px;
+}
+#todo-list{
+    height: 400px;
+    position:relative;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+
+    border: 1px #333 solid;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+
+}
+
+#pending{
+    width:400px;
+}
+
+#pending h3{
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#done{
+    width:400px;
+}
+
+#done h3{
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+#blank{
+    width:40px;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
